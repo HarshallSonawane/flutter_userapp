@@ -11,7 +11,7 @@ class Singlefilepicker extends StatefulWidget {
 
 class _SinglefilepickerState extends State<Singlefilepicker> {
   PlatformFile? file;
-  
+
   Future<void> picksinglefile() async {
     FilePickerResult? result = await FilePicker.platform.pickFiles(
         allowMultiple: false,
