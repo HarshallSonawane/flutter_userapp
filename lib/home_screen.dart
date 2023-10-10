@@ -88,7 +88,7 @@ class _HomeScreenState extends State<HomeScreen> {
               padding: const EdgeInsets.symmetric(horizontal: 40),
               child: TextField(
                 controller: keyController,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Enter your key:',
                   counterText: '', // To remove the character counter
@@ -102,12 +102,12 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: () {
                 _submitKey();
                 ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
+                  const SnackBar(
                     content: Text('Key submitted'),
                   ),
                 );
               },
-              child: Text('Submit Key'),
+              child: const Text('Submit Key'),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.black,
                 foregroundColor: Colors.amber,
